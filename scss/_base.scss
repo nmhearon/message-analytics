@@ -29,13 +29,21 @@ header{
 .navigation{
   ul{
     background: $navbgcolor;
-    font-size: 1.25em;
+    font-size: 1em;
     li{
       a{
         color: white;
+        font-family: Arial;
       }
     }
   }
+}
+.sec1{
+  // background: purple;
+  background-image: url("../img/sec1bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 // ---------Hexagon Pre-Loaded CSS fron BoilerPlate--------
 .hexagon {
