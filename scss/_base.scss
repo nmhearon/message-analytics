@@ -39,11 +39,35 @@ header{
   }
 }
 .sec1{
-  // background: purple;
+  grid-area: sec1;
+  // background-image: url("../img/sec1bg.jpg");
+  // filter: opacity(50%);
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  padding: 3px;
+  font-size: 2em;
+  color: black;
+  align-self: center;
+}
+.sec2{
+  grid-area: sec2;
+  padding: 3px;
+  font-size: 2em;
+  align-self: center;
+}
+.sec3{
+  grid-area: sec3;
+  padding: 3px;
+  font-size: 2em;
+  align-self: center;
+}
+.img1{
+  grid-area: img1;
   background-image: url("../img/sec1bg.jpg");
+  background-size: contain;
   background-repeat: no-repeat;
-  background-size: cover;
-
+  filter: opacity(75%);
+  // align-self: center;
 }
 // ---------Hexagon Pre-Loaded CSS fron BoilerPlate--------
 .hexagon {
