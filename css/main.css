@@ -6,6 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in
  *    IE on Windows Phone and in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Knewave|Lobster|Roboto");
 html {
   line-height: 1.15;
   /* 1 */
@@ -518,6 +519,28 @@ textarea {
   padding: 0.2em 0;
 }
 
+html {
+  background: white;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  color: black;
+  text-align: center;
+}
+header h1 {
+  font-size: 3em;
+  font-family: 'Lobster', cursive;
+}
+header h2 {
+  font-size: 1.5em;
+  font-family: 'Knewave', cursive;
+}
+
 .hexagon {
   position: relative;
   width: 300px;
@@ -711,4 +734,9 @@ textarea {
 }
 .container {
   max-width: 960px;
+}
+
+.site {
+  display: grids;
+  grid-gap: 1em;
 }
