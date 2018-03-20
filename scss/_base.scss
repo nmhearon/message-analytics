@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Knewave|Lobster|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Kalam|Lobster|Roboto');
 // @import 'icon/*.png';
 // @include all-icon-sprites;
 
@@ -13,17 +13,30 @@ html{
 }
 header{
   color: $textcolor;
-  text-align: center;
   h1{
     font-size: 3em;
     font-family: 'Lobster', cursive;
+    text-align: left;
+    padding-left: 50px;
   }
   h2{
     font-size: 1.5em;
-    font-family: 'Knewave', cursive;
+    font-family: 'Kalam', cursive;
+    text-align: left;
+    padding-left: 120px;
   }
 }
-
+.navigation{
+  ul{
+    background: $navbgcolor;
+    font-size: 1.25em;
+    li{
+      a{
+        color: white;
+      }
+    }
+  }
+}
 // ---------Hexagon Pre-Loaded CSS fron BoilerPlate--------
 .hexagon {
   position: relative;
