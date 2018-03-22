@@ -611,13 +611,25 @@ header h2 {
 .advforyou {
   grid-area: advforyou;
 }
+.advforyou li {
+  list-style: number;
+}
 
 .advforothers {
   grid-area: advforothers;
 }
+.advforothers h2 {
+  align-self: center;
+}
+.advforothers li {
+  list-style: number;
+}
 
 .advgeneral {
   grid-area: advgeneral;
+}
+.advgeneral li {
+  list-style: number;
 }
 
 footer {

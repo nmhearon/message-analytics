@@ -94,12 +94,27 @@ header{
 }
 .advforyou{
   grid-area: advforyou;
+  // align-self: center;
+  li{
+    list-style: number;
+  }
 }
 .advforothers{
   grid-area: advforothers;
+  // align-self: center;
+  h2{
+    align-self: center;
+  }
+  li{
+    list-style: number;
+  }
 }
 .advgeneral{
   grid-area: advgeneral;
+  // align-self: center;
+  li{
+    list-style: number;
+  }
 }
 footer{
   grid-area: foot;

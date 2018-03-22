@@ -11,7 +11,8 @@
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
         <link rel="stylesheet" href="css/main.css">
-        <!-- <script src="js/jquery-3.3.1.min.js"></script> -->
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="js/expandable_panels.js"></script>
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-Y"></script>
         <script>
@@ -35,10 +36,10 @@
             <section class="navigation">
                 <nav>
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About This Project</a></li>
-                        <li><a href="">Return To Dev Portal</a></li>
-                        <li><a href="">Analytics Data</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About This Project</a></li>
+                        <li><a href="../index.html">Return To Dev Portal</a></li>
+                        <li><a href="404.html">Analytics Data</a></li>
                         <li><a target="_blank" href="https://github.com/nmhearon/message-analytics">GitHub Repository</a></li>
                     </ul>
                 </nav>
@@ -67,9 +68,9 @@
                 <div class="img3">
                     <img src="img/einstein.jpg" alt="Albert Einstein">
                     </div>
-            <div class="piecesofadvice">
                 <div class="advforyou">
-                    <div class="adv1">
+                    <h2>Advice For You</h2>
+                    <div class="expandable_panel" data-link-text="Read More">
                         <ul>
                             <li>Just because you can doesn’t mean you should.</li>
                             <li>Take a vacation of your cell phone, internet, and TV once a year.</li>
@@ -88,7 +89,8 @@
                     </div>
                 </div>
                 <div class="advforothers">
-                    <div class="adv2">
+                    <h2>Advice About Others</h2>
+                    <div class="expandable_panel" data-link-text="Read More">
                         <ul>
                             <li>If a street performer makes you stop walking, you owe him a buck.</li>
                             <li>Make time for your mom on your birthday. It’s her special day, too.</li>
@@ -105,7 +107,8 @@
                     </div>
                 </div>
                 <div class="advgeneral">
-                    <div class="adv3">
+                    <h2>General Advice</h2>
+                    <div class="expandable_panel" data-link-text="Read More">
                        <ul>
                             <li>When entrusted with a secret, keep it.</li>
                             <li>Never park in front of a bar.</li>
@@ -123,7 +126,6 @@
                         </ul> 
                     </div>
                 </div>
-            </div>
         </main>
         <section <!-- /scripts /-->
             <script src="js/vendor/modernizr-3.5.0.min.js"></script>
