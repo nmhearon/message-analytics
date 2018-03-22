@@ -555,7 +555,7 @@ header h2 {
 
 .sec1 {
   grid-area: sec1;
-  padding: 3px;
+  padding: 5px;
   font-size: 2em;
   color: black;
   align-self: center;
@@ -577,10 +577,38 @@ header h2 {
 
 .img1 {
   grid-area: img1;
-  background-image: url("../img/sec1bg.jpg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  filter: opacity(75%);
+  align-self: center;
+}
+.img1 img {
+  position: relative;
+  width: 100%;
+  border-style: solid;
+  border-color: black;
+  margin: 2px;
+}
+
+.img2 {
+  grid-area: img2;
+  align-self: center;
+}
+.img2 img {
+  position: relative;
+  width: 100%;
+  border-style: solid;
+  border-color: black;
+  margin: 2px;
+}
+
+.img3 {
+  grid-area: img3;
+  align-self: center;
+}
+.img3 img {
+  position: relative;
+  width: 100%;
+  border-style: solid;
+  border-color: black;
+  margin: 2px;
 }
 
 .hexagon {
@@ -781,9 +809,10 @@ header h2 {
 
 .site {
   display: grid;
+  grid-gap: 5px;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 80px repeat(4, 400px);
-  grid-template-areas: "nav nav nav" "img1 sec1 sec1" "sec2 sec2 ." ". sec3 sec3" "advice advice advice";
+  grid-template-areas: "nav nav nav" "img1 sec1 sec1" "sec2 sec2 img2" "img3 sec3 sec3" "advice advice advice";
 }
 
 .navigation {
