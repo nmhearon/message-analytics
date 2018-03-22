@@ -582,8 +582,6 @@ header h2 {
 .img1 img {
   position: relative;
   width: 100%;
-  border-style: solid;
-  border-color: black;
   margin: 2px;
 }
 
@@ -593,10 +591,9 @@ header h2 {
 }
 .img2 img {
   position: relative;
-  width: 100%;
-  border-style: solid;
-  border-color: black;
-  margin: 2px;
+  image-orientation: from-image;
+  width: 90%;
+  margin: 5px;
 }
 
 .img3 {
@@ -605,10 +602,26 @@ header h2 {
 }
 .img3 img {
   position: relative;
-  width: 100%;
+  width: 95%;
   border-style: solid;
   border-color: black;
-  margin: 2px;
+  margin: 5px;
+}
+
+.advforyou {
+  grid-area: advforyou;
+}
+
+.advforothers {
+  grid-area: advforothers;
+}
+
+.advgeneral {
+  grid-area: advgeneral;
+}
+
+footer {
+  grid-area: foot;
 }
 
 .hexagon {
@@ -811,8 +824,8 @@ header h2 {
   display: grid;
   grid-gap: 5px;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 80px repeat(4, 400px);
-  grid-template-areas: "nav nav nav" "img1 sec1 sec1" "sec2 sec2 img2" "img3 sec3 sec3" "advice advice advice";
+  grid-template-rows: 80px repeat(3, 300px) 600px 80px;
+  grid-template-areas: "nav nav nav" "img1 sec1 sec1" "sec2 sec2 img2" "img3 sec3 sec3" "advforyou advforothers advgeneral" "foot foot foot";
 }
 
 .navigation {

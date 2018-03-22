@@ -62,8 +62,8 @@ header{
   img{
     position: relative;
     width: 100%;
-    border-style: solid;
-    border-color: black;
+    // border-style: solid;
+    // border-color: black;
     margin: 2px;
   }
   align-self: center;
@@ -72,10 +72,12 @@ header{
   grid-area: img2;
   img{
     position: relative;
-    width: 100%;
-    border-style: solid;
-    border-color: black;
-    margin: 2px;
+    image-orientation: from-image;
+    //interesting, but very useful code!  Image was flipped upside down before this
+    width: 90%;
+    // border-style: solid;
+    // border-color: black;
+    margin: 5px;
   }
   align-self: center;
 }
@@ -83,12 +85,24 @@ header{
   grid-area: img3;
   img{
     position: relative;
-    width: 100%;
+    width: 95%;
     border-style: solid;
     border-color: black;
-    margin: 2px;
+    margin: 5px;
   }
   align-self: center;
+}
+.advforyou{
+  grid-area: advforyou;
+}
+.advforothers{
+  grid-area: advforothers;
+}
+.advgeneral{
+  grid-area: advgeneral;
+}
+footer{
+  grid-area: foot;
 }
 // ---------Hexagon Pre-Loaded CSS fron BoilerPlate--------
 .hexagon {
