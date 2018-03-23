@@ -98,12 +98,15 @@ header{
   li{
     list-style: number;
   }
+  h2{
+    text-align: center;
+  }
 }
 .advforothers{
   grid-area: advforothers;
   // align-self: center;
   h2{
-    align-self: center;
+    text-align: center;
   }
   li{
     list-style: number;
@@ -115,9 +118,24 @@ header{
   li{
     list-style: number;
   }
+  h2{
+    text-align: center;
+  }
 }
 footer{
   grid-area: foot;
+  align-self: center;
+  text-align: center;
+  margin: auto;
+}
+hr{
+  height: 15px;
+}
+h2{
+    font-style: 'Roboto', sans-serif;
+}
+p{
+  font-style: 'Roboto', sans-serif; 
 }
 // ---------Hexagon Pre-Loaded CSS fron BoilerPlate--------
 .hexagon {

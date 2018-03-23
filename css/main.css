@@ -614,12 +614,15 @@ header h2 {
 .advforyou li {
   list-style: number;
 }
+.advforyou h2 {
+  text-align: center;
+}
 
 .advforothers {
   grid-area: advforothers;
 }
 .advforothers h2 {
-  align-self: center;
+  text-align: center;
 }
 .advforothers li {
   list-style: number;
@@ -631,9 +634,27 @@ header h2 {
 .advgeneral li {
   list-style: number;
 }
+.advgeneral h2 {
+  text-align: center;
+}
 
 footer {
   grid-area: foot;
+  align-self: center;
+  text-align: center;
+  margin: auto;
+}
+
+hr {
+  height: 15px;
+}
+
+h2 {
+  font-style: 'Roboto', sans-serif;
+}
+
+p {
+  font-style: 'Roboto', sans-serif;
 }
 
 .hexagon {
@@ -863,4 +884,11 @@ footer {
   display: block;
   margin: auto;
   text-decoration: none;
+}
+
+.about {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
