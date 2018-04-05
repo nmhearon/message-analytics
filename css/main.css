@@ -693,11 +693,13 @@ p {
     font-size: 3em;
     font-family: 'Lobster', cursive;
     text-align: center;
+    padding: 0px;
   }
   header h2 {
     font-size: 1.5em;
     font-family: 'Kalam', cursive;
     text-align: center;
+    padding: 0px;
   }
 
   .sec1, .sec2, .sec3 {
@@ -716,13 +718,11 @@ p {
     font-size: 3em;
     font-family: 'Lobster', cursive;
     text-align: center;
-    padding: 0px;
   }
   header h2 {
     font-size: 1.5em;
     font-family: 'Kalam', cursive;
     text-align: center;
-    padding: 0px;
   }
 }
 /*
@@ -931,11 +931,12 @@ p {
   grid-row-end: 3;
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 959px) {
   .container {
     outline: solid 0px;
   }
-
+}
+@media screen and (max-width: 860px) {
   .site {
     display: grid;
     grid-gap: 5px;
