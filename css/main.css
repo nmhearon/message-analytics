@@ -685,6 +685,46 @@ p {
   border-top: 86.60px solid #ffffff;
 }
 
+@media screen and (max-width: 860px) {
+  header {
+    color: black;
+  }
+  header h1 {
+    font-size: 3em;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+  }
+  header h2 {
+    font-size: 1.5em;
+    font-family: 'Kalam', cursive;
+    text-align: center;
+  }
+
+  .sec1, .sec2, .sec3 {
+    margin: 5px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .sec1, .sec2, .sec3 {
+    font-size: 1.5em;
+  }
+
+  header {
+    color: black;
+  }
+  header h1 {
+    font-size: 3em;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    padding: 0px;
+  }
+  header h2 {
+    font-size: 1.5em;
+    font-family: 'Kalam', cursive;
+    text-align: center;
+    padding: 0px;
+  }
+}
 /*
  * Hide visually and from screen readers
  */
@@ -856,8 +896,6 @@ p {
 .site {
   display: grid;
   grid-gap: 5px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 80px repeat(3, 300px) 600px 80px;
   grid-template-areas: "nav nav nav" "img1 sec1 sec1" "sec2 sec2 img2" "img3 sec3 sec3" "advforyou advforothers advgeneral" "foot foot foot";
 }
 
@@ -891,4 +929,20 @@ p {
   grid-column-end: 4;
   grid-row-start: 2;
   grid-row-end: 3;
+}
+
+@media screen and (max-width: 860px) {
+  .container {
+    outline: solid 0px;
+  }
+
+  .site {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas: "nav nav" "sec1 sec1" "sec2 sec2" "sec3 sec3" "advforyou advforyou" "advforothers advforothers" "advgeneral advgeneral" "foot foot";
+  }
+
+  .img1, .img2, .img3 {
+    display: none;
+  }
 }

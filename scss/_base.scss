@@ -165,3 +165,41 @@ p{
   border-top: 86.60px solid #ffffff;
 }
 // why...
+@media screen and (max-width: 860px){
+  header{
+    color: $textcolor;
+    h1{
+      font-size: 3em;
+      font-family: 'Lobster', cursive;
+      text-align: center;
+    }//h1 close
+    h2{
+      font-size: 1.5em;
+      font-family: 'Kalam', cursive;
+      text-align: center;
+    }//h2 close
+  }//headerclose
+  .sec1, .sec2, .sec3{
+    margin: 5px;
+  }
+}//media query close
+@media screen and (max-width: 360px){
+  .sec1, .sec2, .sec3{
+    font-size: 1.5em;
+  }
+  header{
+    color: $textcolor;
+    h1{
+      font-size: 3em;
+      font-family: 'Lobster', cursive;
+      text-align: center;
+      padding: 0px;
+    }//h1 close
+    h2{
+      font-size: 1.5em;
+      font-family: 'Kalam', cursive;
+      text-align: center;
+      padding: 0px;
+    }//h2 close
+  }//headerclose
+}

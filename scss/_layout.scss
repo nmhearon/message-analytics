@@ -5,8 +5,8 @@
 .site{
 	display: grid;
 	grid-gap: 5px;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 80px repeat(3, 300px) 600px 80px;
+	// grid-template-columns: 1fr 1fr 1fr;
+	// grid-template-rows: 80px repeat(3, 300px) 600px 80px;
 
 	grid-template-areas:
 	"nav nav nav"
@@ -48,4 +48,31 @@
 	grid-column-end: 4;
 	grid-row-start: 2;
 	grid-row-end: 3;
+}
+@media screen and (max-width: 860px){
+	.container{
+		outline: solid 0px;
+}
+	.site{
+		display: grid;
+		grid-gap: 5px;
+		// grid-template-columns: 1fr 1fr 1fr;
+		// grid-template-rows: 80px repeat(3, 300px) 600px 80px;
+
+		grid-template-areas:
+		"nav nav"
+		"sec1 sec1"
+		"sec2 sec2"
+		"sec3 sec3"
+		"advforyou advforyou"
+		"advforothers advforothers"
+		"advgeneral advgeneral"
+		"foot foot";
+
+		// align-items: start;
+
+}
+	.img1, .img2, .img3{
+		display: none;
+	}
 }
